@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import PersonDetail from '../components/characters/PersonDetail';
+import CharacterList from '../components/characters/CharacterList';
+//import PersonDetail from '../components/characters/PersonDetail';
 import getCharacters from '../services/API';
 
 export default function AvatarList() {
@@ -16,7 +17,8 @@ export default function AvatarList() {
 
   return (
     <>
-      <PersonDetail characters={charList} />
+      <p>Person Container</p>
+      <CharacterList characters={charList} />
     </>
   );
 }

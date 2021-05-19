@@ -4,7 +4,12 @@ import { Link } from 'react-router-dom';
 
 const CharacterDetail = ({ name, image, faction }) => (
   <figure>
-    <img src={image || 'https://placekitten.com/200/300'} alt={name} />
+    <img
+      src={
+        image || 'https://img.fireden.net/co/image/1599/50/1599505274378.png'
+      }
+      alt={name}
+    />
     <figcaption>
       <p>Name: {name}</p>
       <p>of the {faction}</p>
