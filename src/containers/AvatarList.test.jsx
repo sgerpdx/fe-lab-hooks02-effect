@@ -19,5 +19,7 @@ describe('Functional Container Component', () => {
     render(<AvatarList />);
 
     screen.getByText('Loading...');
+
+    screen.findByRole('list');
   });
 });
