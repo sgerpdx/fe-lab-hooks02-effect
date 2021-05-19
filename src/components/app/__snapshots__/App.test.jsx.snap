@@ -5,5 +5,8 @@ exports[`App component renders App 1`] = `
   <h1>
     Hello World
   </h1>
+  <h2>
+    Loading...
+  </h2>
 </DocumentFragment>
 `;
