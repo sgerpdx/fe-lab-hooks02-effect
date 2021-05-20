@@ -5,6 +5,7 @@ import getPerson from '../services/detailFetchAPI';
 export default function PersonContainer(props) {
   const [loading, setLoading] = useState(true);
   const [charItem, setCharItem] = useState([]);
+  //const {id} = useParams();
 
   useEffect(() => {
     getPerson(props.match.params.id)

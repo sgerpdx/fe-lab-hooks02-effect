@@ -16,22 +16,3 @@ const getCharacters = async () => {
 };
 
 export default getCharacters;
-
-// res data format (20 characters):
-// [
-//   {
-//     _id: '5cf5679a915ecad153ab68fd',
-//     allies: ['Ozai'],
-//     enemies: ['Earth Kingdom'],
-//     name: 'Chan (Fire Nation admiral)',
-//     affiliation: 'Fire Nation Navy',
-//   },
-//   {
-//     _id: '5cf5679a915ecad153ab6900',
-//     allies: ['Aang'],
-//     enemies: ['Azula'],
-//     photoUrl:
-//       'https://vignette.wikia.nocookie.net/avatar/images/8/81/Chit_Sang.png/revision/latest?cb=20121021000707',
-//     name: 'Chit Sang',
-//   },
-// ];

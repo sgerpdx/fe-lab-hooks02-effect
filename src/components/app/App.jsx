@@ -8,6 +8,11 @@ export default function App() {
     <Router>
       <Route exact path="/" component={AvatarList} />
       <Route exact path="/:id" component={PersonContainer} />
+      {/* <Route
+        path="/pokemon/:id"
+        exact
+        render={(routerProps) => <PersonContainer {...routerProps} />}
+      /> */}
     </Router>
   );
 }

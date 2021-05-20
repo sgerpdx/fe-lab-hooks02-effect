@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-//import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 const CharacterDetail = ({ id, name, image, faction }) => (
   <figure>
@@ -18,5 +18,12 @@ const CharacterDetail = ({ id, name, image, faction }) => (
     </figcaption>
   </figure>
 );
+
+CharacterDetail.propTypes = {
+  id: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  faction: PropTypes.string.isRequired,
+};
 
 export default CharacterDetail;

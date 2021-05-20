@@ -1,8 +1,7 @@
 import React from 'react';
 import CharacterDetail from './CharacterDetail';
 import styles from '../app/App.css';
-//import { Link } from 'react-router-dom';
-//import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 const CharacterList = ({ characters }) => {
   return (
@@ -14,6 +13,17 @@ const CharacterList = ({ characters }) => {
       ))}
     </ul>
   );
+};
+
+CharacterList.propTypes = {
+  characters: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
+      faction: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };
 
 export default CharacterList;
