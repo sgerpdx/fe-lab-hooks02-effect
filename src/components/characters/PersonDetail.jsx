@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 //import PropTypes from 'prop-types';
 
 const PersonDetail = ({ character }) => {
-  //console.log('Props:',);
   return (
     <>
       <figure>
