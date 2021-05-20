@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import PersonDetail from '../components/characters/PersonDetail';
-import getPerson from '../services/detailFetchAPI';
+import { useThisPerson } from '../hooks/personHook';
 
 export default function PersonContainer(props) {
-  const [loading, setLoading] = useState(true);
-  const [charItem, setCharItem] = useState([]);
-  //const {id} = useParams();
+  // const [loading, setLoading] = useState(true);
+  // const [charItem, setCharItem] = useState([]);
 
-  useEffect(() => {
-    getPerson(props.match.params.id)
-      .then(setCharItem)
-      .finally(() => setLoading(false));
-  }, []);
+  // useEffect(() => {
+  //   getPerson(props.match.params.id)
+  //     .then(setCharItem)
+  //     .finally(() => setLoading(false));
+  // }, []);
+
+  const { loading, charItem } = useThisPerson(props);
 
   if (loading) return <h2>Loading...</h2>;
 
