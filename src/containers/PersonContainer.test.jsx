@@ -45,19 +45,16 @@ describe('Detail page Container Component', () => {
       </MemoryRouter>
     );
 
+    // Testing for page loading and basic elements:
     const loading = await screen.getByText('Loading...');
     expect(loading).toMatchSnapshot();
     const figure = await screen.findByRole('figure');
     expect(figure).toMatchSnapshot();
     const heading = await screen.findByRole('heading');
     expect(heading).toMatchSnapshot();
-    //const image = await screen.findByRole('image');
-    //expect(image).toMatchSnapshot();
 
-    //expect(thing).toMatchSnapshot();
-
+    // Testing for rendered character detail and image:
     return waitFor(() => {
-      // screen.getByText('Analay', { exact: false });
       screen.getByText('of the Unnamed team');
       screen.getByAltText('Analay');
     });
