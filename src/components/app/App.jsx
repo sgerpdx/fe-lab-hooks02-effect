@@ -7,7 +7,7 @@ export default function App() {
   return (
     <Router>
       <Route exact path="/" component={AvatarList} />
-      <Route exact path="/detail" component={PersonContainer} />
+      <Route exact path="/:id" component={PersonContainer} />
     </Router>
 
     // <div>

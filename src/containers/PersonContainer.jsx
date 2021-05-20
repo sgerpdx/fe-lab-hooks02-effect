@@ -1,24 +1,27 @@
 import React, { useState, useEffect } from 'react';
-import CharacterList from '../components/characters/CharacterList';
-//import PersonDetail from '../components/characters/PersonDetail';
-import getCharacters from '../services/API';
+import PersonDetail from '../components/characters/PersonDetail';
+import getPerson from '../services/detailFetchAPI';
 
-export default function AvatarList() {
+export default function PersonContainer(props) {
   const [loading, setLoading] = useState(true);
-  const [charList, setCharList] = useState([]);
+  const [charItem, setCharItem] = useState([]);
+
+  console.log('///props:', props);
 
   useEffect(() => {
-    getCharacters()
-      .then(setCharList)
+    getPerson(props.match.params.id)
+      .then(setCharItem)
       .finally(() => setLoading(false));
   }, []);
+
+  console.log('>>>charItem:', charItem);
 
   if (loading) return <h2>Loading...</h2>;
 
   return (
     <>
       <p>Person Container</p>
-      <CharacterList characters={charList} />
+      <PersonDetail character={charItem} />
     </>
   );
 }

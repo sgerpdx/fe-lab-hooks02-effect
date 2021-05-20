@@ -5,15 +5,15 @@ import userEvent from '@testing-library/user-event';
 import { rest } from 'msw';
 import { setupServer } from 'msw/node';
 
-const avatarServer = setupServer(
-  rest.get('URL', (req, res, ctx) => {
-    return res(ctx.json([]));
-  })
-);
+// const avatarServer = setupServer(
+//   rest.get('URL', (req, res, ctx) => {
+//     return res(ctx.json([]));
+//   })
+// );
 
 describe('Functional Container Component', () => {
-  beforeAll(() => avatarServer.listen());
-  afterAll(() => avatarServer.close());
+  // beforeAll(() => avatarServer.listen());
+  // afterAll(() => avatarServer.close());
 
   it('displays a list of Avatar characters via AvatarList', async () => {
     render(<AvatarList />);
