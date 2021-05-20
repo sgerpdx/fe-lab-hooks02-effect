@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Functional Container Component displays a list of Avatar characters via AvatarList 1`] = `
+<h2>
+  Loading...
+</h2>
+`;
+
+exports[`Functional Container Component displays a list of Avatar characters via AvatarList 2`] = `Promise {}`;
