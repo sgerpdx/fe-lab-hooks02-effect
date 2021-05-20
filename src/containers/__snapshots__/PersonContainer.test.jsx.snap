@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Detail page Container Component displays a single character image and text details 1`] = `
+<h2>
+  Loading...
+</h2>
+`;
+
+exports[`Detail page Container Component displays a single character image and text details 2`] = `
+<figure>
+  <img
+    alt="Analay"
+    src="https://vignette.wikia.nocookie.net/avatar/images/c/c3/Analay.png/revision/latest?cb=20140430182201"
+  />
+  <figcaption>
+    <p>
+      Name: 
+      Analay
+    </p>
+    <p>
+      of the 
+      Unnamed team
+    </p>
+  </figcaption>
+</figure>
+`;
+
+exports[`Detail page Container Component displays a single character image and text details 3`] = `
+<h3>
+  Return to All Characters
+</h3>
+`;

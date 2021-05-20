@@ -1,0 +1,23 @@
+body {
+  background-color: rgb(223, 206, 173);
+  color: darkslategrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.listTitle {
+  background-color: darkslategrey;
+  color: cyan;
+  text-align: center;
+}
+
+.listSubTitle {
+  color: darkslategrey;
+  text-align: center;
+}
+
+.listArea {
+  list-style-type: none;
+}
